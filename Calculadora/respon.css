@@ -1,0 +1,17 @@
+@media (max-width: 410px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .display__calculadora {
+    font-size: 2.5rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+  }
+  .buttons__calculadora {
+    height: 25rem;
+    grid-template-rows: repeat(5, 65px);
+    grid-template-columns: repeat(4, 65px);
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}

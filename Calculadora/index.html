@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="respon.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=pally@700,500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="button-theme">Tema</button>
+      Calculadora
+      <div class="box__calculadora">
+        <div class="display__calculadora"><p id="result">0</p></div>
+        <div class="buttons__calculadora">
+          <button class="button-number button-7" onclick="insert('7')">
+            7
+          </button>
+          <button class="button-number button-8" onclick="insert('8')">
+            8
+          </button>
+          <button class="button-number button-9" onclick="insert('9')">
+            9
+          </button>
+          <button class="button button-reset" onclick="clean()">C</button>
+          <button class="button-number button-4" onclick="insert('4')">
+            4
+          </button>
+          <button class="button-number button-5" onclick="insert('5')">
+            5
+          </button>
+          <button class="button-number button-6" onclick="insert('6')">
+            6
+          </button>
+          <button class="button button-mais" onclick="insert('+')">+</button>
+          <button class="button-number button-1" onclick="insert('1')">
+            1
+          </button>
+          <button class="button-number button-2" onclick="insert('2')">
+            2
+          </button>
+          <button class="button-number button-3" onclick="insert('3')">
+            3
+          </button>
+          <button class="button button-menos" onclick="insert('-')">-</button>
+          <button class="button-number button-ponto" onclick="insert('.')">
+            .
+          </button>
+          <button class="button-number button-0" onclick="insert('0')">
+            0
+          </button>
+          <button class="button button-divisao" onclick="insert('/')">/</button>
+          <button class="button button-multiplicacao" onclick="insert('*')">
+            x
+          </button>
+          <button class="button button-delete" onclick="deletar()">
+            Delete
+          </button>
+          <button class="button button-igual" onclick="calcular()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
